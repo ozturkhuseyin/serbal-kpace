@@ -1,0 +1,355 @@
+[
+  {
+    "id": "cmd.mk1-pod",
+    "name": "Mk1 Command Pod",
+    "category": "command",
+    "mass": 0.84,
+    "cost": 600,
+    "description": "Single-seat capsule. The classic starter command pod.",
+    "techRequired": "basicRocketry",
+    "radius": 0.625,
+    "height": 1.4,
+    "dragArea": 1.2,
+    "attachNodes": [
+      { "id": "bottom", "position": [0, -0.7, 0], "size": 1, "direction": [0, -1, 0] },
+      { "id": "top", "position": [0, 0.7, 0], "size": 0, "direction": [0, 1, 0] }
+    ]
+  },
+  {
+    "id": "cmd.mk1-2-pod",
+    "name": "Mk1-2 Command Pod",
+    "category": "command",
+    "mass": 2.7,
+    "cost": 3800,
+    "description": "Three-seat command pod with reinforced heat shielding.",
+    "techRequired": "advancedRocketry",
+    "radius": 1.25,
+    "height": 1.8,
+    "dragArea": 2.4,
+    "attachNodes": [
+      { "id": "bottom", "position": [0, -0.9, 0], "size": 2, "direction": [0, -1, 0] },
+      { "id": "top", "position": [0, 0.9, 0], "size": 1, "direction": [0, 1, 0] }
+    ]
+  },
+  {
+    "id": "cmd.probe-core",
+    "name": "Probe Core",
+    "category": "command",
+    "mass": 0.1,
+    "cost": 480,
+    "description": "Unmanned probe core. Useful for science satellites.",
+    "techRequired": "basicScience",
+    "radius": 0.4,
+    "height": 0.4,
+    "dragArea": 0.6,
+    "attachNodes": [
+      { "id": "bottom", "position": [0, -0.2, 0], "size": 1, "direction": [0, -1, 0] },
+      { "id": "top", "position": [0, 0.2, 0], "size": 0, "direction": [0, 1, 0] }
+    ]
+  },
+  {
+    "id": "tank.fl-t100",
+    "name": "FL-T100 Fuel Tank",
+    "category": "tank",
+    "mass": 0.0625,
+    "cost": 150,
+    "description": "Small liquid fuel + oxidizer tank.",
+    "techRequired": "basicRocketry",
+    "radius": 0.625,
+    "height": 0.8,
+    "fuelLF": 45,
+    "fuelOx": 55,
+    "dragArea": 0.8,
+    "attachNodes": [
+      { "id": "top", "position": [0, 0.4, 0], "size": 1, "direction": [0, 1, 0] },
+      { "id": "bottom", "position": [0, -0.4, 0], "size": 1, "direction": [0, -1, 0] }
+    ]
+  },
+  {
+    "id": "tank.fl-t400",
+    "name": "FL-T400 Fuel Tank",
+    "category": "tank",
+    "mass": 0.25,
+    "cost": 500,
+    "description": "Standard liquid fuel + oxidizer tank.",
+    "techRequired": "basicRocketry",
+    "radius": 0.625,
+    "height": 1.85,
+    "fuelLF": 180,
+    "fuelOx": 220,
+    "dragArea": 1.0,
+    "attachNodes": [
+      { "id": "top", "position": [0, 0.92, 0], "size": 1, "direction": [0, 1, 0] },
+      { "id": "bottom", "position": [0, -0.92, 0], "size": 1, "direction": [0, -1, 0] }
+    ]
+  },
+  {
+    "id": "tank.fl-t800",
+    "name": "FL-T800 Fuel Tank",
+    "category": "tank",
+    "mass": 0.5,
+    "cost": 800,
+    "description": "Large liquid fuel + oxidizer tank.",
+    "techRequired": "generalRocketry",
+    "radius": 0.625,
+    "height": 3.7,
+    "fuelLF": 360,
+    "fuelOx": 440,
+    "dragArea": 1.4,
+    "attachNodes": [
+      { "id": "top", "position": [0, 1.85, 0], "size": 1, "direction": [0, 1, 0] },
+      { "id": "bottom", "position": [0, -1.85, 0], "size": 1, "direction": [0, -1, 0] }
+    ]
+  },
+  {
+    "id": "engine.lv-t30",
+    "name": "LV-T30 Reliant",
+    "category": "engine",
+    "mass": 1.25,
+    "cost": 1100,
+    "description": "Reliable workhorse main engine.",
+    "techRequired": "basicRocketry",
+    "radius": 0.625,
+    "height": 1.1,
+    "thrustVac": 240,
+    "thrustAtm": 205,
+    "ispVac": 310,
+    "ispAtm": 270,
+    "gimbalRange": 0,
+    "propellants": { "liquidFuel": 0.9, "oxidizer": 1.1 },
+    "dragArea": 0.5,
+    "exhaustLength": 1.0,
+    "exhaustCore": "#fff5dc",
+    "exhaustOuter": "#ff8a3a",
+    "attachNodes": [
+      { "id": "top", "position": [0, 0.55, 0], "size": 1, "direction": [0, 1, 0] },
+      { "id": "bottom", "position": [0, -0.55, 0], "size": 1, "direction": [0, -1, 0] }
+    ]
+  },
+  {
+    "id": "engine.lv-t45",
+    "name": "LV-T45 Swivel",
+    "category": "engine",
+    "mass": 1.5,
+    "cost": 1200,
+    "description": "Gimballed liquid engine, ideal for ascent stages.",
+    "techRequired": "basicRocketry",
+    "radius": 0.625,
+    "height": 1.1,
+    "thrustVac": 215,
+    "thrustAtm": 180,
+    "ispVac": 320,
+    "ispAtm": 250,
+    "gimbalRange": 3,
+    "propellants": { "liquidFuel": 0.9, "oxidizer": 1.1 },
+    "dragArea": 0.5,
+    "exhaustLength": 1.1,
+    "exhaustCore": "#ffe2c0",
+    "exhaustOuter": "#ff5a22",
+    "attachNodes": [
+      { "id": "top", "position": [0, 0.55, 0], "size": 1, "direction": [0, 1, 0] },
+      { "id": "bottom", "position": [0, -0.55, 0], "size": 1, "direction": [0, -1, 0] }
+    ]
+  },
+  {
+    "id": "engine.lv-909",
+    "name": "LV-909 Terrier",
+    "category": "engine",
+    "mass": 0.5,
+    "cost": 390,
+    "description": "Vacuum-optimised upper stage engine.",
+    "techRequired": "advancedRocketry",
+    "radius": 0.5,
+    "height": 1.0,
+    "thrustVac": 60,
+    "thrustAtm": 14,
+    "ispVac": 345,
+    "ispAtm": 85,
+    "gimbalRange": 4,
+    "propellants": { "liquidFuel": 0.9, "oxidizer": 1.1 },
+    "dragArea": 0.4,
+    "exhaustLength": 1.4,
+    "exhaustCore": "#bcd6ff",
+    "exhaustOuter": "#5390e0",
+    "attachNodes": [
+      { "id": "top", "position": [0, 0.5, 0], "size": 1, "direction": [0, 1, 0] },
+      { "id": "bottom", "position": [0, -0.5, 0], "size": 1, "direction": [0, -1, 0] }
+    ]
+  },
+  {
+    "id": "engine.poodle",
+    "name": "RE-L10 Poodle",
+    "category": "engine",
+    "mass": 1.75,
+    "cost": 1300,
+    "description": "Twin-bell vacuum engine for high Δv missions.",
+    "techRequired": "advancedRocketry",
+    "radius": 1.25,
+    "height": 1.4,
+    "thrustVac": 250,
+    "thrustAtm": 64,
+    "ispVac": 350,
+    "ispAtm": 90,
+    "gimbalRange": 4.5,
+    "propellants": { "liquidFuel": 0.9, "oxidizer": 1.1 },
+    "dragArea": 1.0,
+    "exhaustLength": 1.6,
+    "exhaustCore": "#cfe2ff",
+    "exhaustOuter": "#4172c0",
+    "attachNodes": [
+      { "id": "top", "position": [0, 0.7, 0], "size": 2, "direction": [0, 1, 0] },
+      { "id": "bottom", "position": [0, -0.7, 0], "size": 2, "direction": [0, -1, 0] }
+    ]
+  },
+  {
+    "id": "srb.bacc",
+    "name": "BACC Solid Booster",
+    "category": "srb",
+    "mass": 7.65,
+    "cost": 800,
+    "description": "Solid fuel booster. Cannot be throttled or restarted.",
+    "techRequired": "basicRocketry",
+    "radius": 0.6,
+    "height": 6.4,
+    "thrustVac": 315,
+    "thrustAtm": 250,
+    "ispVac": 230,
+    "ispAtm": 195,
+    "gimbalRange": 0,
+    "propellants": { "liquidFuel": 0, "oxidizer": 0 },
+    "fuelLF": 350,
+    "fuelOx": 0,
+    "dragArea": 1.6,
+    "exhaustLength": 1.4,
+    "exhaustCore": "#fff2c8",
+    "exhaustOuter": "#ff7a22",
+    "attachNodes": [
+      { "id": "top", "position": [0, 3.2, 0], "size": 1, "direction": [0, 1, 0] },
+      { "id": "bottom", "position": [0, -3.2, 0], "size": 1, "direction": [0, -1, 0] }
+    ]
+  },
+  {
+    "id": "decoupler.tr-18a",
+    "name": "TR-18A Stack Decoupler",
+    "category": "decoupler",
+    "mass": 0.05,
+    "cost": 400,
+    "description": "Separates two stacked stages with a small impulse.",
+    "techRequired": "basicRocketry",
+    "radius": 0.625,
+    "height": 0.18,
+    "dragArea": 0.4,
+    "attachNodes": [
+      { "id": "top", "position": [0, 0.09, 0], "size": 1, "direction": [0, 1, 0] },
+      { "id": "bottom", "position": [0, -0.09, 0], "size": 1, "direction": [0, -1, 0] }
+    ]
+  },
+  {
+    "id": "para.mk16",
+    "name": "Mk16 Parachute",
+    "category": "parachute",
+    "mass": 0.1,
+    "cost": 422,
+    "description": "Stowed canopy that deploys in atmosphere to slow descent.",
+    "techRequired": "basicRocketry",
+    "radius": 0.45,
+    "height": 0.35,
+    "dragArea": 6.5,
+    "attachNodes": [
+      { "id": "bottom", "position": [0, -0.18, 0], "size": 1, "direction": [0, -1, 0] }
+    ]
+  },
+  {
+    "id": "fin.aerodynamic",
+    "name": "AV-T1 Winglet",
+    "category": "fin",
+    "mass": 0.03,
+    "cost": 500,
+    "description": "Aerodynamic fin for atmospheric stability.",
+    "techRequired": "basicAerodynamics",
+    "dragArea": 0.4,
+    "attachNodes": [
+      { "id": "root", "position": [0, 0, 0], "size": 0, "direction": [1, 0, 0] }
+    ]
+  },
+  {
+    "id": "leg.lt-1",
+    "name": "LT-1 Landing Strut",
+    "category": "leg",
+    "mass": 0.05,
+    "cost": 200,
+    "description": "Retractable strut for soft landings on solid surfaces.",
+    "techRequired": "advancedRocketry",
+    "dragArea": 0.2,
+    "attachNodes": [
+      { "id": "root", "position": [0, 0, 0], "size": 0, "direction": [1, 0, 0] }
+    ]
+  },
+  {
+    "id": "science.thermometer",
+    "name": "2HOT Thermometer",
+    "category": "science",
+    "mass": 0.005,
+    "cost": 900,
+    "description": "Measures temperature for science.",
+    "techRequired": "basicScience",
+    "dragArea": 0.1,
+    "attachNodes": [
+      { "id": "root", "position": [0, 0, 0], "size": 0, "direction": [1, 0, 0] }
+    ]
+  },
+  {
+    "id": "science.barometer",
+    "name": "PRESMAT Barometer",
+    "category": "science",
+    "mass": 0.005,
+    "cost": 1100,
+    "description": "Measures atmospheric pressure for science.",
+    "techRequired": "basicScience",
+    "dragArea": 0.1,
+    "attachNodes": [
+      { "id": "root", "position": [0, 0, 0], "size": 0, "direction": [1, 0, 0] }
+    ]
+  },
+  {
+    "id": "antenna.basic",
+    "name": "Communotron 16",
+    "category": "antenna",
+    "mass": 0.005,
+    "cost": 350,
+    "description": "Basic antenna for transmitting data.",
+    "techRequired": "basicScience",
+    "dragArea": 0.1,
+    "attachNodes": [
+      { "id": "root", "position": [0, 0, 0], "size": 0, "direction": [1, 0, 0] }
+    ]
+  },
+  {
+    "id": "fairing.aero-1m",
+    "name": "AE-FF1 Fairing",
+    "category": "fairing",
+    "mass": 0.075,
+    "cost": 900,
+    "description": "Procedural protective fairing for sensitive payloads.",
+    "techRequired": "basicAerodynamics",
+    "radius": 1.25,
+    "height": 2.5,
+    "dragArea": 0.6,
+    "attachNodes": [
+      { "id": "bottom", "position": [0, -1.25, 0], "size": 1, "direction": [0, -1, 0] }
+    ]
+  },
+  {
+    "id": "structural.tt-38k",
+    "name": "TT-38K Radial Decoupler",
+    "category": "structural",
+    "mass": 0.025,
+    "cost": 600,
+    "description": "Radial decoupler for side boosters.",
+    "techRequired": "basicRocketry",
+    "dragArea": 0.2,
+    "attachNodes": [
+      { "id": "root", "position": [0, 0, 0], "size": 0, "direction": [1, 0, 0] }
+    ]
+  }
+]
